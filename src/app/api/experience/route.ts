@@ -5,10 +5,9 @@ export async function GET() {
   try {
     const experiences = await prisma.experience.findMany({
       orderBy: {
-        order: 'asc',
+        startDate: 'desc',
       },
     });
-    experiences.sort((a, b) => b.startDate.getTime() - a.startDate.getTime());
 
     return NextResponse.json(experiences);
   } catch (error) {

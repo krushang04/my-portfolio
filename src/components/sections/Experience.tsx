@@ -7,7 +7,7 @@ import Image from "next/image";
 import { ExperienceProps } from '@/lib/types';
 
 const Experience = () => {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
   const [experiences, setExperiences] = useState<ExperienceProps['experiences']>([]);
 
   useEffect(() => {
@@ -100,8 +100,8 @@ const Experience = () => {
 
                 {/* Expandable Content */}
                 {expandedIndex === index && experience.description && (
-                  <div className="mt-4" style={{ marginLeft: 'calc(4rem + 1.5rem)' }}>
-                    <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 whitespace-pre-line">
+                  <div className="mt-4" style={{ marginLeft: 'calc( 1.5rem)' }}>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 p-4 rounded-lg bg-card md:text-base text-gray-600 dark:text-gray-300 whitespace-pre-line border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow duration-200">
                       {experience.description}
                     </p>
                   </div>
