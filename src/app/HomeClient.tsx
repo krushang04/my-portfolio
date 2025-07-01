@@ -48,9 +48,10 @@ export default function HomeClient({
       
       {/* All sections with pre-fetched data */}
       <Experience />
-      <Education education={education} />
-      <Projects projects={projects} />
       <Skills skills={skills} />
+      <Projects projects={projects} />
+      <Education education={education} />
+      
       {randomQuote && <Quotes quotes={[randomQuote]} />}
     </div>
   );

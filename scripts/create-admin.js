@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 async function main() {
   // Set these values to your desired admin credentials
   const email = 'parmar.krushang04@gmail.com';
-  const password = 'Portfolio@123'; // Change this to a secure password
+  const password = 'Portfolio@123';
   const name = 'Krushang Parmar';
 
   console.log('Creating admin user...');
