@@ -42,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
     keywords: settings?.keywords?.split(',').map(k => k.trim()) || [],
     authors: [{ name: "Krushang Parmar" }],
     icons: {
-      icon: '/favicon.ico'
+      icon: '/profile.png'
     }
   };
 }

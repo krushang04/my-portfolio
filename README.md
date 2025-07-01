@@ -129,5 +129,5 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 ---
 
 ## 📬 Contact
-**Author:** Deep Patel  
+**Author:** Krushang Parmar 
 For questions or support, please open an issue or contact the project maintainer.

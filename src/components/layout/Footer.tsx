@@ -66,12 +66,12 @@ const Footer = () => {
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               Designed and Developed by{" "}
               <Link
-                href={profile?.linkedinUrl || "https://x.com/deepxtwt"}
+                href={profile?.linkedinUrl || "https://www.linkedin.com/in/krushang-parmar/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 dark:text-gray-200 font-medium hover:text-blue-500 dark:hover:text-blue-400 transition-colors inline-flex items-center gap-1"
               >
-                {profile?.name || "Deep Patel"}
+                {profile?.name || "Krushang Parmar"}
               </Link>
             </p>
           </div>
