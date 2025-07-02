@@ -48,7 +48,10 @@ const Education = ({ education = [] }: EducationProps) => {
                     <div className="flex-grow min-w-0 flex flex-col">
                       <div className="flex items-center gap-2">
                         <h3 className="text-base md:text-lg font-semibold text-gray-900 dark:text-white whitespace-nowrap">
-                          {edu.institution}
+                        <p>
+                          <span className="block sm:hidden">Nirma University</span>
+                          <span className="hidden sm:inline">{edu.institution}</span>
+                        </p>
                         </h3>
                       </div>
                       <p className="text-gray-900 dark:text-white text-xs md:text-sm">
